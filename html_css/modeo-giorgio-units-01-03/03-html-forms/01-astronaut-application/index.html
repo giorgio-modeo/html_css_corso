@@ -9,22 +9,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body style="background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1035676256.jpg');">
+    <body>
         <header>
-            <h1>Astronaut candidates</h1>
             <nav>
+                <div class="navbar-header">
+                    <a href="https://www.nasa.gov/" title="Home Page">
+                      <img class="logo" src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg" alt="Nasa">
+                    </a>
+                    <i>Astronaut Candidates</i>
+                  </div>
                 
             </nav>
         </header>
         <main style="min-height: 90vh;">
             <form action="" class="grid-container" >
-                <section>
+                <section class="s1">
                     <article style="min-height: 100%;">
                             <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" required><br>
+                            <input type="text" id="fname" required><br><br>
 
                             <label for="mname">middle name:</label><br>
-                            <input type="text" id="mname"><br>
+                            <input type="text" id="mname"><br><br>
 
                             <label for="lname">Last name:</label><br>
                             <input type="text" id="lname" required><br><br>
@@ -37,75 +42,50 @@
                                 <option value="art3">&nbsp Artemis 3</option>
                                 <option disabled >&emsp I.S.S. mission </option>
                                 <option value="iss">&nbsp International Space Station</option>
-                            </select><br>
+                            </select><br><br>
 
                             <label for="weight">Weight:</label><br>
-                            <input type="number" max="100" required><br>
+                            <input type="number" max="100" required><br><br>
 
                             <label for="mail">E-mail:</label><br>
-                            <input type="email" id="mail"><br>
+                            <input type="email" id="mail"><br><br>
 
                     </article>
                 </section>
+               
 
                 <section >
                 <!-- white space -->
                 </section>
 
-                <section>
+                <section class="s2">
                     <article style="min-height: 100%;">
                             <label for="age">Date of birth:</label><br>
                             <input type="date" id="age" required><br>
 
                             <label for="gender">Gender</label><br>
-                            <select id="gender" required>
+                            <select id="gender" required><br>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option value="m">male</option>
                                 <option value="f">fmale</option>
                                 <option value="o">other</option>
-                            </select><br>
-
-                            <label for="hair">Hair color:</label><br>
+                            </select><br><br>
+                            
+                            <label for="hair" >Hair color:</label><br>
                             <input type="color" id="hair" value="#ffffff" required><br><br>
                             
                             <label for="eye">Eye color:</label><br>
                             <input type="color" id="eye" value="#ffffff" required><br><br>
-
+                            
                             <label for="bio">biography <span style="font-size: 1rem;">(max 255 characters)</span></label><br>
-                            <textarea id="bio" cols="30" rows="10" maxlength="255" required>Enter text here...</textarea><br>
+                            <textarea id="bio" cols="30" rows="10" maxlength="255" placeholder="Enter text here...w" required></textarea><br><br>
 
                         </article>
                 </section>
-                <input type="submit" value="Submit" class="sub">
+                <button type="submit" class="sub">SUBMIT</button>
             </form>
         </main>
-        <style>
-            .grid-container {
-                display: grid;
-                grid-template-columns: auto 2% auto;
-            }
-            .sub{
-                display: flex;
-                background-color: blue;
-                max-width: 6%;
-                position: relative;
-                margin-left: 99%;
-                margin-top: 20%;
-            }
-            article{
-                background-color: crimson;
-                border: 1px solid rgba(0, 0, 0, 0.8);
-                padding: 20px;
-                font-size: 30px;
-                text-align: center;
-            }
-            header{
-                background-color: rgba(0, 0, 0, 0.5);
-                color: aqua;
-                padding: 1rem;
-            }
+        <link rel="stylesheet" href="style/main.css">
 
-        </style>
-        <script src="" async defer></script>
     </body>
 </html>
