@@ -1,18 +1,21 @@
 let form = document.getElementById("form")
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
-    let fname = document.getElementById("fname")
-    let mname = document.getElementById("mname")
-    let lname = document.getElementById("lname")
-    let miss = document.getElementById("mission")
-    let weight = document.getElementById("weight")
-    let mail = document.getElementById("mail")
+    var $items = $('#fname','#mname','#lname','#mission','#weight','#mail','#age','#gender','#hair','#eye','#bio')
+    var obj={}
     
-    let age = document.getElementById("age")
-    let gender = document.getElementById("gender")
-    let hair = document.getElementById("hair")
-    let eye = document.getElementById("eye")
-    let bio = document.getElementById("bio")
+    // let fname = document.getElementById("")
+    // let mname = document.getElementById("")
+    // let lname = document.getElementById("")
+    // let miss = document.getElementById("")
+    // let weight = document.getElementById("")
+    // let mail = document.getElementById("")
+    
+    // let age = document.getElementById("age")
+    // let gender = document.getElementById("gender")
+    // let hair = document.getElementById("hair")
+    // let eye = document.getElementById("eye")
+    // let bio = document.getElementById("bio")
     
 
 
@@ -22,11 +25,11 @@ form.addEventListener("submit",(e)=>{
     headers.append("Content-Type", "application/json")
 
     const body = {
-    "first name": fname,
-    "middle name": mname,
-    "last name": lname,
+    "first name":fname,
+    "middle name":mname,
+    "last name":lname,
     "mission":miss,
-    "weight" :weight,
+    "weight":weight,
     "mail":mail,
     "age":age,
     "gender":gender,
@@ -43,5 +46,5 @@ form.addEventListener("submit",(e)=>{
     body: JSON.stringify(body),
     }
 
-    fetch("https://eogakxqek5vcrtb.m.pipedream.net", options)
+    fetch("https://eoynwby8w2fc1zc.m.pipedream.net", options)
 });
