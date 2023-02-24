@@ -44,16 +44,16 @@
                     <section class="s1">
                         <article>
                             <label for="fname">First name:</label><div></div>
-                            <input type="text" id="fname" name="fname"><div></div><div></div>
+                            <input type="text" id="fname" name="fname" pattern="[a-zA-Z]+" required><div></div><div></div>
                             
                             <label for="mname">middle name:</label><div></div>
-                            <input type="text" id="mname" name="mname"><div></div><div></div>
+                            <input type="text" id="mname" name="mname" pattern="[a-zA-Z]+"><div></div><div></div>
 
                             <label for="lname">Last name:</label><div></div>
-                            <input type="text" id="lname" name="lname"><div></div><div></div>
+                            <input type="text" id="lname" name="lname" pattern="[a-zA-Z]+" required><div></div><div></div>
 
                             <label for="mission">Desired mission</label><div></div>
-                            <select id="mission" name="mission">
+                            <select id="mission" name="mission" required>
                                 <option disabled selected value> -- select an option -- </option>
                                 <option disabled>&emsp; Artemis mission </option>
                                 <option value="art2">&nbsp; Artemis 2</option>
@@ -63,10 +63,10 @@
                             </select><div></div><div></div>
                             
                             <label for="weight">Weight:</label><div></div>
-                            <input id="weight" type="number" name="weight" max="100"><div></div><div></div>
+                            <input id="weight" type="number" name="weight" max="100" required><div></div><div></div>
                             
                             <label for="mail">E-mail:</label><div></div>
-                            <input id="mail" type="email" name="E-mail"><div></div><div></div>
+                            <input id="mail" type="email" name="E-mail" required><div></div><div></div>
                             
                         </article>
                     </section>
@@ -80,10 +80,10 @@
                     <section class="s2">
                         <article class="a2">
                             <label for="age">Date of birth:</label><div></div>
-                            <input type="date" id="age" name="age"><div></div>
+                            <input type="date" id="age" name="age" required><div></div>
 
                             <label for="gender">Gender</label><div></div>
-                            <select id="gender" name="gender">
+                            <select id="gender" name="gender" required>
                                 <option disabled selected value>&emsp;-- select an option -- </option>
                                 <option value="m">&nbsp;male</option>
                                 <option value="f">&nbsp;fmale</option>
@@ -98,7 +98,7 @@
 
                             <label for="bio">biography <span>(max 255characters)</span></label><div></div>
                             <textarea id="bio" cols="30" rows="10" name="bio" maxlength="255" placeholder="Enter text here..."
-                            ></textarea><div></div><div></div>
+                                required></textarea><div></div><div></div>
                                 
                         </article>
                     <!-- second section-->

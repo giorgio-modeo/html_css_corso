@@ -8,38 +8,48 @@ body{
     }
 .grid-container {
     display: grid;
-    grid-template-columns:auto 2% auto ;
+    grid-template-columns:40% auto 40% ;
 }
 .s1{
-    padding-left: 2%;
+    padding-left: 20%;
 }
 .s2{
-    padding-right: 2%;
+    padding-right: 20%;
 }
-.sub{
+.button{
     display: flex;
-    background-color: #15418c;
-    width: 60%;
-    height: 15%;
     position: relative;
-    margin-left: 70%;
-    margin-top: 20%;
     border-style: none;
-    font-size: 1.5vw;
     align-items: center;
     display: inline-block;
     text-align: center;
-    color: white;
+
     letter-spacing: 1.5px;
+    background-color: #15418c;
+    width: 51%;
+    height: 15%;
+    font-size: 1.5vw;
+    color: white;
+    margin-top: 5%;
+
+    margin-left: 25%;
 }
-.sub:hover{
+
+.button:hover,.button:focus{
+    border-style: none;
     background-color: #5d7fb9;
 }
+.res{
+    position: relative;
+    margin-top: 1%;
+}
+
 article{
+    min-height: 100%;
+    max-width: 85%;
     background-color: rgba(255, 255, 255, 0.089);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
+    padding: 1.3vw;
     text-align: center;
     border-radius: 10px;
 }
@@ -56,11 +66,57 @@ header{
 }
 label{
     border-radius: 30px;
-    font-size: 4vw;
+    font-size: 2vw;
     font-family: initial;
 }
 input,select,option,textarea{
     background-color:rgb(53, 51, 51);
     color: white;
     border-style: none;
+}
+span{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:992px){
+    article{
+        padding: 3vw;
+    }
+    textarea{
+        max-width: 39vw;
+    }
+    .button{
+        margin-left: 20%;
+    }
+    .sub{
+        margin-top: 10%;
+    }
+    label{
+        font-size: 4vw;
+    }
+    .grid-container{
+        grid-template-columns: auto 2% auto;
+    }
+    .s1{
+        padding-left: 2%;
+    }
+    .s2{
+        padding-right: 2%;
+    }
+}
+@media screen and (max-width:600px){
+    .button{
+        margin-left: 25%;
+    } 
+    .sub{
+        margin-top: 20%;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+        margin-left: 5%;
+    }
+    .a2{
+        margin-top: 10%;
+        margin-left: 2%;
+    }
 }
