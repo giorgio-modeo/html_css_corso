@@ -13,8 +13,6 @@
         <meta name="description" content="">
         <!-- Set the viewport for mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Link to an external stylesheet -->
-        <link rel="stylesheet" href="">
     </head>
     <body>
         <!-- Add inline styles to the body of the webpage -->
@@ -23,46 +21,45 @@
                 color: lightgray;
             }
 
-php
+            header{
+                background-color: red;
+            }
+            main{
+                background-color: lightblue;
+            }
+            aside{
+                text-align: right;
+                /* align-content:space-between; */
+            }
+            nav{
+                background-color: #202124;
+            }
+            footer{
+                background-color: black;
+            }
+        </style>
 
-        header{
-            background-color: red;
-        }
-        main{
-            background-color: lightblue;
-        }
-        aside{
-            text-align: right;
-            /* align-content:space-between; */
-        }
-        nav{
-            background-color: #202124;
-        }
-        footer{
-            background-color: black;
-        }
-    </style>
-    <!-- Add the header of the webpage -->
-    <header>
-        <h1>My Page Title</h1>
-    </header>
-    <!-- Add the main content of the webpage -->
-    <main>
-        <!-- Add the sidebar to the main content -->
-        <aside>
-            <nav >
-                <p>Some stuff in a sidebar</p>
-            </nav>
-        </aside>
-        <!-- Add the main article content to the main content -->
-        <article style="color: black;">
-            <p>The main content</p>
-        </article>
-    </main>
-    <!-- Add the footer of the webpage -->
-    <footer>
-        <p>Copyright me</p>
-    </footer>
-</body>
+        <!-- Add the header of the webpage -->
+        <header>
+            <h1>My Page Title</h1>
+        </header>
+        <!-- Add the main content of the webpage -->
+        <main>
+            <!-- Add the sidebar to the main content -->
+            <aside>
+                <nav >
+                    <p>Some stuff in a sidebar</p>
+                </nav>
+            </aside>
+            <!-- Add the main article content to the main content -->
+            <article style="color: black;">
+                <p>The main content</p>
+            </article>
+        </main>
+        <!-- Add the footer of the webpage -->
+        <footer>
+            <p>Copyright me</p>
+        </footer>
+    </body>
 
 </html>

@@ -4,11 +4,12 @@ This is a basic HTML document that contains an introduction to video games and t
 Usage
 
 This document can be used as a template for creating a webpage or as a starting point for learning HTML.
-HTML Structure
+
+**HTML Structure**
 
 The HTML document is structured as follows:
 
-    '<!DOCTYPE html>' : This sets the document type as HTML5
+    <!DOCTYPE html>: This sets the document type as HTML5
     <html lang="en">: This sets the language of the document as English
     <head>: This section contains metadata about the document
     <title>: This sets the title of the webpage

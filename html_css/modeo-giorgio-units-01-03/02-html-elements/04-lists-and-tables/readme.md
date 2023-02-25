@@ -1,7 +1,8 @@
 **Usage**
 
 You can use this code as a reference to create your own HTML file or to practice HTML coding.
-Description
+
+**Description**
 
 The code starts by setting the document type to HTML5 and the character encoding to UTF-8. It also sets the latest version of Internet Explorer and defines the viewport width to the device width.
 
