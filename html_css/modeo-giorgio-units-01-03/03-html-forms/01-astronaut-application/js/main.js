@@ -1,48 +1,11 @@
+// This code selects the form element with id "form"
 let form = document.getElementById("form")
-form.addEventListener("submit",(e)=>{
+// This code adds an event listener to the form when it's submitted
+    form.addEventListener("submit",(e)=>{
+    // This code prevents the default behavior of the form submitting
     e.preventDefault();
 
-    let fname = document.getElementById("")
-    let mname = document.getElementById("")
-    let lname = document.getElementById("")
-    let miss = document.getElementById("")
-    let weight = document.getElementById("")
-    let mail = document.getElementById("")
-    
-    let age = document.getElementById("age")
-    let gender = document.getElementById("gender")
-    let hair = document.getElementById("hair")
-    let eye = document.getElementById("eye")
-    let bio = document.getElementById("bio")
-    
-
-
+    // This code displays an alert that says "funziona"
     alert("funziona")
-
-    const headers = new Headers()
-    headers.append("Content-Type", "application/json")
-
-    const body = {
-    "first name":fname,
-    "middle name":mname,
-    "last name":lname,
-    "mission":miss,
-    "weight":weight,
-    "mail":mail,
-    "age":age,
-    "gender":gender,
-    "hair":hair,
-    "eye":eye,
-    "bio":bio
-
-    }
-
-    const options = {
-    method: "POST",
-    headers,
-    mode: "cors",
-    body: JSON.stringify(body),
-    }
-
-    fetch("https://eoynwby8w2fc1zc.m.pipedream.net", options)
 });
+// This code is an example of using JavaScript to handle form submissions without reloading the page.

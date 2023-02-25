@@ -1,22 +1,33 @@
-h1{
+/* Set the font family for all h1 tags to inherit */
+h1 {
     font-family: inherit;
 }
-body{
-        font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
-        background-image: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg);
-        color: white;
-    }
+
+/* Set the font family for the body text and add a background image */
+body {
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    /* background-image: url(httpswww.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg); */
+    color: white;
+}
+
+/* Set up a grid container and its template columns */
 .grid-container {
     display: grid;
-    grid-template-columns:40% auto 40% ;
+    grid-template-columns: 40% auto 40%;
 }
-.s1{
+
+/* Add padding to the left side of elements with class "s1" */
+.s1 {
     padding-left: 20%;
 }
-.s2{
+
+/* Add padding to the right side of elements with class "s2" */
+.s2 {
     padding-right: 20%;
 }
-.button{
+
+/* Style the button element with a background color and a hover effect */
+.button {
     display: flex;
     position: relative;
     border-style: none;
@@ -33,18 +44,24 @@ body{
     margin-top: 5%;
 
     margin-left: 25%;
+
 }
 
-.button:hover,.button:focus{
+.button:hover,
+.button:focus {
     border-style: none;
     background-color: #5d7fb9;
 }
-.res{
+
+/* Style the element with class "res" and set its position and margin */
+.res {
     position: relative;
     margin-top: 1%;
 }
 
-article{
+/* Set the minimum height and maximum width for article elements */
+/* and add a background color, border, padding, text alignment, and border radius */
+article {
     min-height: 100%;
     max-width: 85%;
     background-color: rgba(255, 255, 255, 0.089);
@@ -53,7 +70,9 @@ article{
     text-align: center;
     border-radius: 10px;
 }
-header{
+
+/* Set the maximum width, background color, text color, and padding for header elements */
+header {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -61,62 +80,103 @@ header{
     color: aqua;
     padding: 1rem;
 }
-.logo{
+
+/* Set the maximum width for elements with class "logo" */
+.logo {
     max-width: 80px;
 }
-label{
+
+/* Add a border radius and set the font size and family for label elements */
+label {
     border-radius: 30px;
     font-size: 2vw;
     font-family: initial;
 }
-input,select,option,textarea{
-    background-color:rgb(53, 51, 51);
+
+/* Set the background color, text color, and border style for input, select, option, and textarea elements */
+input,
+select,
+option,
+textarea {
+    background-color: rgb(53, 51, 51);
     color: white;
     border-style: none;
 }
-span{
+
+/* Set the font size for span elements */
+span {
     font-size: 1rem;
 }
 
+/* Add media queries for screens with max widths of 992px and 600px */
+/* to adjust the styling for smaller screens */
+
 @media screen and (max-width:992px){
-    article{
+
+    /* Adjust padding for article elements and the maximum width for textarea elements */
+    article {
         padding: 3vw;
     }
-    textarea{
+
+    textarea {
         max-width: 39vw;
     }
-    .button{
+
+    /* Adjust the button margin and label font size */
+    .button {
         margin-left: 20%;
     }
-    .sub{
+
+    /* Set the margin-top of elements with class "sub" to 10% */
+    .sub {
         margin-top: 10%;
     }
-    label{
+
+    /* Set the font-size of all label elements to 4% of the viewport width */
+    label {
         font-size: 4vw;
     }
-    .grid-container{
+
+    /* Define a grid container with three columns of equal width */
+    .grid-container {
         grid-template-columns: auto 2% auto;
     }
-    .s1{
+
+    /* Add left padding to elements with class "s1" */
+    .s1 {
         padding-left: 2%;
     }
-    .s2{
+
+    /* Add right padding to elements with class "s2" */
+    .s2 {
         padding-right: 2%;
     }
 }
-@media screen and (max-width:600px){
-    .button{
+
+    /* For screens with a maximum width of 600px */
+@media screen and (max-width:600px) {
+    css
+
+    /* Set the left margin of elements with class "button" to 25% */
+    .button {
         margin-left: 25%;
-    } 
-    .sub{
+    }
+
+    /* Set the margin-top of elements with class "sub" to 20% */
+    .sub {
         margin-top: 20%;
     }
-    .grid-container{
+
+    /* Change the grid template to one column and add left margin */
+    .grid-container {
         grid-template-columns: auto;
         margin-left: 5%;
     }
-    .a2{
+
+    /* Add top and left margins to elements with class "a2" */
+    .a2 {
         margin-top: 10%;
         margin-left: 2%;
     }
+
 }

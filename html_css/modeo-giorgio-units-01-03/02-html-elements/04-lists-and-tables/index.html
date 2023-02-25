@@ -1,82 +1,125 @@
+<!-- Set the document type to HTML5 -->
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!-- Start the HTML document -->
 <html>
     <head>
+        <!-- Set the character encoding to UTF-8 -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+    <!-- Use the latest version of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the title of the document -->
+    <title></title>
+
+    <!-- Set the description of the document -->
+    <meta name="description" content="">
+
+    <!-- Set the viewport width to the device width and scale to initial zoom level -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
     <body>
+        <!-- Style the images to have a maximum width of 200px and maximum height auto -->
         <style>
             img{
                 max-width: 200px;
                 max-height: auto;
             }
         </style>
+
+        <!-- Start the header section -->
         <header>
+            <!-- Set the main heading of the document -->
             <h1>This is a fourth exercises</h1>
         </header>
+
+        <!-- Start the main section of the document -->
         <main>
+            <!-- Start the first article section -->
             <article>
+                <!-- Start the first section -->
                 <section>
+                    <!-- Set the heading of the section -->
                     <h2>An Ordered HTML List</h2>
+                    <!-- Create an ordered list -->
                     <ol>
+                        <!-- Add the first list element -->
                         <li>firs elemet</li>
+                        <!-- Add the second list element -->
                         <li>second element</li>
+                        <!-- Add the third list element -->
                         <li>third element</li>
                     </ol> 
                 </section>
+                <!-- End the first section -->
+
+                <!-- Start the second section -->
                 <section>
+                    <!-- Set the heading of the section -->
                     <h2>An Unordered HTML List</h2>
+                    <!-- Create an unordered list -->
                     <ul>
+                        <!-- Add the first list element -->
                         <li>Aldo</li>
+                        <!-- Add the second list element -->
                         <li>Giovanni</li>
+                        <!-- Add the third list element -->
                         <li>Giacomo</li>
                     </ul>
                 </section>
+                <!-- End the second section -->
             </article>
+            <!-- End the first article section -->
 
-
+            <!-- Start the second article section -->
             <article>
+                <!-- Start the third section -->
                 <section>
+                    <!-- Create a table with a bordered and hover effect -->
                     <table class="table table-bordered table-hover">
+                        <!-- Add the table head section -->
                         <thead>
+                            <!-- Add a table row -->
                             <tr>
+                                <!-- Add the heading for the table -->
                                 <th><h2>list of link</h2></th>
                             </tr>
                         </thead>
+                        <!-- Add the table body section -->
                         <tbody>
+                            <!-- Add a table row -->
                             <tr>
+                                <!-- Add the first link in a definition description -->
                                 <td><dd><a href="https://www.w3schools.com/html/default.asp">first link</a></dd></td>
+                                <!-- Add the second link in a definition description -->
                                 <td><dd><a href="https://www.html.it/pag/16026/introduzione22/">second link</a></dd></td>
+                                <!-- Add the third link in a definition description -->
                                 <td><dd><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">third link</a></dd></td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
 
+                <!-- This section contains a table with a list of images -->
                 <section>
-                    <table class="table table-bordered table-hover">
+                    <table>
                         <thead>
                             <tr>
-                                <h2>list of immage</h2>
+                                <!-- Title of the table -->
+                                <h2>List of Images</h2>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                    <td><img src="https://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-26.jpg" alt="immage not load"></td>
-                                    <td><img src="https://dday.imgix.net/system/uploads/news/main_image/43305/c64b9d_cover_large__FX0Xg7xUEAEMmue_copia.png?ar=702%3A360&fit=crop&auto=format%2Ccompress&w=702&s=ccc943869731c4b08df26b8f05827d5a" alt="immage not load"></td>
-                                    <td><img src="https://thumbs.dreamstime.com/b/sulle-ali-di-libert%C3%A0-uccelli-che-volano-e-catene-rotte-concetto-della-tassa-146675254.jpg" alt="immage not load"></td>
+                                <!-- The first image in the list -->
+                                <td><img src="https://www.nonsprecare.it/wp-content/uploads/2013/12/immagini-natura-animali-piu-belle-ultimi-dieci-anni-26.jpg" alt="Image not loaded"></td>
+                                <!-- The second image in the list -->
+                                <td><img src="https://dday.imgix.net/system/uploads/news/main_image/43305/c64b9d_cover_large__FX0Xg7xUEAEMmue_copia.png?ar=702%3A360&fit=crop&auto=format%2Ccompress&w=702&s=ccc943869731c4b08df26b8f05827d5a" alt="Image not loaded"></td>
+                                <!-- The third image in the list -->
+                                <td><img src="https://thumbs.dreamstime.com/b/sulle-ali-di-libert%C3%A0-uccelli-che-volano-e-catene-rotte-concetto-della-tassa-146675254.jpg" alt="Image not loaded"></td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
-
             </article>
         </main>
     </body>
