@@ -1,0 +1,22 @@
+/* links not inside lists or paragraphs */
+a {
+    color: red;
+    font-family: Arial, sans-serif;
+}
+
+/* links inside unordered and ordered lists */
+ul a, ol a {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/* links inside paragraphs */
+p a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/* pseudo-class for links */
+a:hover {
+    text-decoration: underline;
+}

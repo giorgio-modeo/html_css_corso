@@ -1,0 +1,27 @@
+/* Element selector */
+h1 {
+    font-size: 3rem
+}
+p {
+    font-size: 1.5rem;
+}
+img{
+    width: 10%;
+    height: auto;
+}
+
+/* Relational selector */
+h2 + p {
+    color: red;
+}
+
+/* ID selector */
+#my-list {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+/* Class selector */
+.my-class {
+    color: green;
+}
