@@ -1,0 +1,16 @@
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  tr:nth-child(4n+2), tr:nth-child(4n+3) {
+    background-color: #ffffff;
+  }
+  
+  tr:nth-child(4n+1), tr:nth-child(4n+4) {
+    background-color: #f2f2f2;
+  }
+  
