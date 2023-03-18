@@ -1,0 +1,184 @@
+/* Set default font styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Center the page in the browser window */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the header section */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Style the headline-news section */
+#headline-news {
+  background-color: #ff9999;
+  padding: 20px;
+}
+
+#headline-news h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#headline-news article {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#headline-news article h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#headline-news article p {
+  margin-bottom: 10px;
+}
+
+#headline-news article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the sports-news section */
+#sports-news {
+  background-color: #99ff99;
+  padding: 20px;
+}
+
+#sports-news h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#sports-news article {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#sports-news article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#sports-news article p {
+  margin-bottom: 10px;
+}
+
+#sports-news article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the entertainment-news section */
+#entertainment-news {
+  background-color: #9999ff;
+  padding: 20px;
+}
+
+#entertainment-news h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#entertainment-news article {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#entertainment-news article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#entertainment-news article p {
+  margin-bottom: 10px;
+}
+
+#entertainment-news article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the business-news section */
+#business-news {
+  background-color: #ffff99;
+  padding: 20px;
+}
+
+#business-news h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#business-news article {
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#business-news article h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#business-news article p {
+  margin-bottom: 10px;
+}
+
+#business-news article img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the advertisement section */
+aside {
+  float: right;
+  width: 300px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  }
+  
+  aside h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  
+  aside p {
+  margin-bottom: 10px;
+  }
+  
+  aside img {
+  max-width: 100%;
+  height: auto;
+  }

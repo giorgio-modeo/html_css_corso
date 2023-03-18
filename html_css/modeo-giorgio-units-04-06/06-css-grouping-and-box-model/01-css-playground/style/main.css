@@ -1,0 +1,63 @@
+      /* Styles for spans */
+      .highlight {
+        background-color: yellow; /* sets the background color to yellow */
+        font-weight: bold; /* makes the text bold */
+        border: 1px solid black; /* adds a black border around the span */
+      }
+
+      /* Styles for divs */
+      .container {
+        max-width: 800px; /* sets the maximum width of the container */
+        margin: 0 auto; /* centers the container horizontally */
+        padding: 20px; /* adds padding around the container */
+        border: 1px solid black; /* adds a black border around the container */
+        border-radius: 5px; /* adds rounded corners to the container */
+      }
+
+      header {
+        background-color: lightblue; /* sets the background color to light blue */
+        padding: 10px; /* adds padding around the header */
+        text-align: center; /* centers the text in the header */
+      }
+
+      aside{
+        float: right; /* aligns the sidebar to the right of the content */
+        width: 200px; /* sets the width of the sidebar */
+        padding: 10px; /* adds padding around the sidebar */
+        background-color: lightgray; /* sets the background color to light gray */
+        border: 1px solid black; /* adds a black border around the sidebar */
+        border-radius: 5px; /* adds rounded corners to the sidebar */
+    }
+
+      article {
+        max-width: 60%; /* sets the maximum width of the 60% */
+        margin-top: 1%;
+        margin-right: 220px; /* sets the right margin to make room for the sidebar */
+        padding: 10px; /* adds padding around the content */
+        border: 1px solid black; /* adds padding around the content */
+    }
+
+      footer {
+        background-color: lightblue; /* sets the background color to light blue */
+        padding: 10px; /* adds padding around the footer */
+        text-align: center; /* centers the text in the footer */
+    }
+
+      /* Styles for images */
+      img {
+        max-width: 100%; /* sets the maximum width of the image */
+        height: auto; /* sets the height to auto to maintain aspect ratio */
+      }
+
+      .image-container {
+        margin: 20px 0; /* adds margin around the image container */
+        text-align: center; /* centers the image container */
+      }
+
+      .image-container img {
+        border: 1px solid black; /* adds a black border around the image */
+        border-radius: 5px; /* adds rounded corners to the image */
+      }
+      .author-image{
+        border-radius: 50% !important;
+      }
