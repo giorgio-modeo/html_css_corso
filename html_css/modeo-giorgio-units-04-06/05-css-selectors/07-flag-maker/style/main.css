@@ -1,7 +1,5 @@
 table{
-    float: left;
-    margin-top: 1%;
-    margin-left: 1%;
+    margin: 1% auto;
     border-collapse: collapse;
 }
 td { 
@@ -19,9 +17,21 @@ td {
 .ita tr td:nth-child(n+7){
     background-color: red;
 }
-.ita:hover::before{
-    content: " italy";
+
+
+/* Romania flag */
+.rom:hover tr td:nth-child(n){
+    background-color: #082781;
 }
+
+.rom:hover tr td:nth-child(n+4){
+    background-color: #ffd101;
+}
+
+.rom:hover tr td:nth-child(n+7){
+    background-color: #dd002f;
+}
+
 /* United States */
 table#usa tr.usa td:nth-of-type(-n+4){
     background-color: blue;
@@ -102,19 +112,18 @@ table#usa tr.usa td:nth-of-type(-n+4){
 .nig tr td:nth-child(n+7){
     background-color: #00874d;
 }
+/* Germany flag */
 
-/* Romania flag */
-.rom tr td:nth-child(n){
-    background-color: #082781;
+.ger{
+    background-color: #dd0000;
+}
+.ger tr:nth-child(-n+3){
+    background-color: black;
+}
+.ger tr:nth-child(n+7){
+    background-color: #ffce00;
 }
 
-.rom tr td:nth-child(n+4){
-    background-color: #ffd101;
-}
-
-.rom tr td:nth-child(n+7){
-    background-color: #dd002f;
-}
 
 /* Fillan flag*/
 .fil tr:nth-child(3),.fil td:nth-child(3){
@@ -150,6 +159,7 @@ table#usa tr.usa td:nth-of-type(-n+4){
 .bol tr:nth-child(n+7){
     background-color: #007c3a;
 }
+
 /* Bulgaria */
 .bul{
     background-color: #05b749;
@@ -160,7 +170,5 @@ table#usa tr.usa td:nth-of-type(-n+4){
 .bul tr:nth-child(n+7){
     background-color: #e61123;
 }
-.col{
-    
-}
+
 
