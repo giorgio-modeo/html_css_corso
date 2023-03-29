@@ -1,0 +1,32 @@
+body {
+    background-image: url(../image/5.svg);
+    background-repeat: no-repeat;
+    background-color: #d8898c;
+}
+@media screen and (min-width: 574px) {
+    body{
+        background-image: url(../image/4.svg);
+        background-color: #77c0e1;
+    }
+}
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url(../image/3.svg);
+        background-color: #91bb95;
+    }
+}
+@media screen and (min-width:992px) {
+    body{
+        background-image: url(../image/2.svg);
+        background-color: #c8d472;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../image/1.svg);
+        background-color: #e0d68e;
+    }
+}
+
+

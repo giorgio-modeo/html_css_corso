@@ -1,0 +1,54 @@
+    /* stili per la navbar */
+    nav {
+        background-color: #333;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 1rem;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+      }
+      li {
+        display: inline-block;
+        margin: 0 1rem;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      input,label{
+          visibility: hidden;
+        }
+      /* stili per la navbar quando è in modalità mobile */
+      @media screen and (max-width: 600px) {
+          nav{
+              text-align: center;
+          }
+        ul {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 3rem;
+          left: 0;
+          background-color: #555;
+          padding: 1rem;
+        }
+        li {
+          display: block;
+          margin: 1rem 0;
+        }
+        label {
+          visibility: visible;
+        }
+        /* mostra la lista quando viene cliccato il pulsante */
+        input:checked ~ ul {
+          display: block;
+          max-width: 90%;
+          position: relative;
+          box-shadow: 5px 10px rgba(21, 21, 21, 0.343);
+        }
+  
+      }
