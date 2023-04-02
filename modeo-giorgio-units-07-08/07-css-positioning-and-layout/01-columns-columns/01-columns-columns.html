@@ -1,19 +1,75 @@
-
-Per lavorare con un approccio content-first:
-1. Perfezionare l'esperienza utente considerando il contenuto fin dall'inizio.
-2. Considerare tutti i canali fin dall'inizio per avere un contenuto unificato e coerente.
-3. Utilizzare il contenuto per definire il layout e il design.
-4. Utilizzare proto-contenuti al posto di segnaposto non contestuali come Lorem Ipsum.
-5. Comprendere i requisiti di contenuto e tecnologici fin dall'inizio, coinvolgendo tutte le discipline.
-
-Il mobile-first è importante perché gli smartphone sono parte integrante delle nostre vite, oltre il 50% del traffico web globale proviene da dispositivi mobili e Google considera la versione mobile prima di quella desktop.
-
-Mobile first: perché e come
-
-Perché mobile first:
-● I cellulari sono parte integrante delle nostre vite
-● Oltre il 50% del traffico web globale proviene dai cellulari
-● Google considera prima la versione mobile rispetto al desktop per posizionare un sito
-● Gli utenti hanno maggiore fiducia nei siti con un'ottima UX mobile
-● È più facile passare da soluzioni semplici a quelle più complesse
-● Mobile first significa essere moderni, utili e semplici
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Two-Column Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      header, footer {
+        background-color: #333;
+        color: white;
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+      }
+      header {
+        top: 0;
+      }
+      footer {
+        bottom: 0;
+      }
+      #sidebar {
+        background-color: #ccc;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 60px;
+      }
+      #main {
+        margin-left: 220px;
+        margin-top: 60px;
+      }
+      #main:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .column {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .caption {
+        text-align: center;
+        font-size: 1.2em;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div id="sidebar">Sidebar</div>
+    <div id="main">
+      <div class="column">
+        <img src="image.jpg" alt="Image">
+        <div class="caption">Caption</div>
+      </div>
+      <div class="column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus blandit dolor quis feugiat maximus. Integer ac ligula sed enim vehicula dignissim. Morbi consectetur blandit ante, eget tempus mauris sodales eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam cursus euismod mauris ac bibendum. Aliquam erat volutpat. In laoreet, ante nec tristique bibendum, arcu libero fringilla justo, vel mollis turpis eros in quam. Morbi a luctus justo. Praesent fermentum vel velit vitae consectetur. Nunc elementum tellus sit amet elit ullamcorper consequat. Sed placerat, urna a lacinia tristique, eros sapien rhoncus nulla, at faucibus enim ipsum nec justo.</p>
+      </div>
+    </div>
+    <footer>Footer</footer>
+  </body>
+</html>
