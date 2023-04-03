@@ -22,6 +22,7 @@
       input,label{
           visibility: hidden;
         }
+        
       /* stili per la navbar quando è in modalità mobile */
       @media screen and (max-width: 600px) {
           nav{
