@@ -1,4 +1,12 @@
     /* stili per la navbar */
+    body {
+      background-color: #1d1d20;
+      }
+    main{
+      position: absolute;
+      width: 99.5%;
+      height: 99%;
+    }
     nav {
         background-color: #333;
         color: #fff;
@@ -15,7 +23,7 @@
         display: inline-block;
         margin: 0 1rem;
       }
-      a {
+      a,p {
         color: #fff;
         text-decoration: none;
       }
